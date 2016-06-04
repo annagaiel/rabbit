@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+  <script type="text/javascript">
+    var Animal = function(){
+      this.sound = "drum drum";
+    }
+    var animal = new Animal();
+
+    var Rabbit = function(){
+      this.color = "white";
+    }
+
+    var rabbit =  new Rabbit();
+    rabbit.__proto__ = animal;
+
+    alert("White rabbit makes the sound of " + rabbit.sound);
+  </script>
+</html>
